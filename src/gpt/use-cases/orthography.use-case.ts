@@ -10,7 +10,7 @@ export const orthographyCheckUseCase = async( openai: OpenAI, options: Options )
   const { prompt } = options;
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4",
+    model: "gpt-3.5-turbo-1106",
     temperature: 0.3,
     max_tokens: 150,
     response_format: {
